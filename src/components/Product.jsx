@@ -1,4 +1,5 @@
 // src/components/Product.jsx
+import React from "react";
 
 const Product = ({
   name,
