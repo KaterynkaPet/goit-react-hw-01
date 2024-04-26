@@ -3,6 +3,10 @@ import Profile from "./profile/Profile";
 
 import friends from "../friends.json";
 import FriendList from "./friend_list/FriendList";
+import FriendListItem from "./FriendListItem";
+
+import transactions from "../transactions.json";
+import TransactionHistory from "./transaction_history/TransactionHistory";
 
 
 function App () {
@@ -17,6 +21,9 @@ function App () {
       />
       <FriendList
         friends={friends}
+      />
+      <TransactionHistory
+        items={transactions}
       />
     </>
   )

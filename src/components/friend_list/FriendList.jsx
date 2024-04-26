@@ -1,14 +1,11 @@
-function FriendList({ friends }) {
+import FriendListItem from "../FriendListItem";
+
+const FriendList = ({ friends }) => {
     return (
         <ul>
-		    <li>
-                <img src={friends.avatar} alt="Avatar" width="48" />
-                <p>{friends.name}</p>
-                <p>
-                    {friends.isOnline == true
-                    ?"Online":"Offline"}
-                </p>
-            </li>
+            {friends.map((friend) => {
+                return <li key={friend.id}><FriendListItem{...friend} /></li>;
+            })}
         </ul>
     )
 }
