@@ -1,0 +1,42 @@
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: white;
+}
+.item {
+    border: 2px solid black;
+    border-radius: 5px;
+    gap: 15px;
+    width: 80px;
+}
+.avatar {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.stats {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.online {
+    color: green;
+}
+.offline {
+    color: red;
+}
